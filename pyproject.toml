@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tg-x-rag"
+version = "0.1.0"
+description = "Telegram bot with integrated RAG model"
+authors = ["alexbuyan <alexbuyan.dev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+aiogram = "^3.6.0"
+langchain = "^0.2.1"
+chromadb = "^0.5.0"
+pypdf = "^4.2.0"
+langchain-community = "^0.2.1"
+sentence-transformers = "^3.0.0"
+load-dotenv = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
