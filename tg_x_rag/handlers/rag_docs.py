@@ -22,6 +22,7 @@ async def upload_provided_doc_handler(message: Message, bot: Bot):
     document = message.document
     file_name = message.document.file_name
     destination = DatabaseConfig.DATA_PATH / file_name
+    await message.answer('Processing the file, please wait...')
     await bot.download(file=document, destination=destination)
     documents = load_docs()
     chunks = split_docs(documents)
