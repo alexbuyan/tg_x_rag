@@ -51,7 +51,7 @@ def assign_chunk_ids(chunks):
         else:
             curr_chunk_id = 0
 
-        chunk_id = f'{curr_page_id}:{curr_chunk_id}'
+        chunk_id = f'page:{curr_page_id}_chunk:{curr_chunk_id}'
         last_page_id = curr_page_id
         chunk.metadata['id'] = chunk_id
     return chunks

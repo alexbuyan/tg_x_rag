@@ -1,0 +1,2 @@
+# In the same directory create .env file and specify BOT_TOKEN
+BOT_TOKEN=

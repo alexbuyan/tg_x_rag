@@ -5,7 +5,7 @@ class DatabaseConfig:
     CHROMA_PATH = Path.cwd() / 'chroma'
 
 class ModelConfig:
-    MODEL_NAME = 'zephyr'
+    MODEL_NAME = 'llama3'
 
     PROMPT_TEMPLATE = """
     Answer the question based only on the following context:
