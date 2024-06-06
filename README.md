@@ -34,3 +34,4 @@ python bot.py
 ```
 
 ## Examples of how the bot works
+![](examples/tg_interaction.mov)
